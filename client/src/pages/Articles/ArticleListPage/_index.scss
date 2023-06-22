@@ -1,0 +1,29 @@
+.sh-article-list-page {
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-block: 20px 40px;
+  }
+
+  &__filters-label {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .sh-article-list-item {
+      width: calc(50% - 25px);
+    }
+  }
+  &__load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 40px 20px;
+  }
+}

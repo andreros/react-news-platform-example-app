@@ -1,0 +1,26 @@
+.sh-header {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+  gap: 30px;
+  background-color: var(--background);
+
+  &__logo {
+    max-width: 130px;
+    max-height: 80px;
+    cursor: pointer;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-grow: 1;
+  }
+
+  &__link {
+    font-weight: 900;
+  }
+}

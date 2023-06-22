@@ -1,0 +1,42 @@
+.sh-article-list-item {
+  display: flex;
+  gap: 20px;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    min-width: 150px;
+    height: 170px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      object-fit: contain;
+      max-width: 150%;
+    }
+  }
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    width: 60%;
+
+    .sh-button {
+      max-width: 120px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

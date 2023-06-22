@@ -1,0 +1,7 @@
+{
+  "domain": "dev-rktyxq5ut224qhhg.us.auth0.com",
+  "clientId": "66fvt4Q2korCWHJpQMvm6oH0LzR6SHgm",
+  "audience": "https://dev-rktyxq5ut224qhhg.us.auth0.com/api/v2/",
+  "appOrigin": "http://localhost:3000",
+  "apiOrigin": "http://localhost:3001"
+}

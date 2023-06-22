@@ -1,0 +1,8 @@
+@import
+  "../../pages/BasePage", // base page needs to be imported before any other page component for correct style cascading
+  "../../pages/Articles/ArticleCreatePage",
+  "../../pages/Articles/ArticleDetailsPage",
+  "../../pages/Articles/ArticleListPage",
+  "../../pages/Bookmarks/BookmarkListPage",
+  "../../pages/LoadingPage",
+  "../../pages/Users/UserProfilePage";

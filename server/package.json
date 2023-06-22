@@ -1,0 +1,20 @@
+{
+  "name": "react-news-platform-server-example-app",
+  "version": "1.0.0",
+  "description": "News Platform server application (API)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "start:with:params": "npx cross-env PORT=9001 node server.js"
+  },
+  "author": "André Rosa (andreros@gmail.com)",
+  "dependencies": {
+    "better-sqlite3": "^8.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

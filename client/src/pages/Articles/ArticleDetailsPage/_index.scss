@@ -1,0 +1,37 @@
+.sh-article-details-page {
+  &__image {
+    margin: -20px -20px 40px -20px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  &__highlight {
+    font-size: inherit;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  &__category {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__author,
+  &__bookmark {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    margin-bottom: 40px;
+  }
+}

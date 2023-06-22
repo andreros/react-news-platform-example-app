@@ -1,0 +1,16 @@
+.sh-bookmark-list-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  &__highlight {
+    font-weight: 700;
+  }
+}

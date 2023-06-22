@@ -1,0 +1,25 @@
+.sh-bookmark-list-page {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__empty-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    text-align: center;
+
+    * {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

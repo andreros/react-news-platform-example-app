@@ -1,0 +1,13 @@
+.sh-article-create-page {
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    .p-component {
+      width: 100%;
+    }
+  }
+}
