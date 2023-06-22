@@ -10,7 +10,7 @@ export interface IArticleListItemProps {
 }
 
 export const ArticleListItem: React.FC<IArticleListItemProps> = ({ className, article, onClick }) => {
-    const rootClasses = clsx('sh-article-list-item', className);
+    const rootClasses = clsx('np-article-list-item', className);
 
     const handleReadMoreButtonClick = (e: React.MouseEvent<HTMLButtonElement | HTMLDivElement>) => {
         e.preventDefault();
@@ -20,17 +20,17 @@ export const ArticleListItem: React.FC<IArticleListItemProps> = ({ className, ar
 
     return (
         <div className={rootClasses}>
-            <div className="sh-article-list-item__image" role="button" tabIndex={0} onClick={handleReadMoreButtonClick}>
+            <div className="np-article-list-item__image" role="button" tabIndex={0} onClick={handleReadMoreButtonClick}>
                 <img src={article.image} alt={article.title} />
             </div>
-            <div className="sh-article-list-item__contents">
-                <h1 className="sh-article-list-item__title sh-line-clamp-2" title={article.title}>
+            <div className="np-article-list-item__contents">
+                <h1 className="np-article-list-item__title np-line-clamp-2" title={article.title}>
                     {article.title}
                 </h1>
-                <h2 className="sh-article-list-item__description sh-line-clamp-3" title={article.description}>
+                <h2 className="np-article-list-item__description np-line-clamp-3" title={article.description}>
                     {article.description}
                 </h2>
-                <button className="sh-button sh-button--primary" onClick={handleReadMoreButtonClick}>
+                <button className="np-button np-button--primary" onClick={handleReadMoreButtonClick}>
                     Read more
                 </button>
             </div>

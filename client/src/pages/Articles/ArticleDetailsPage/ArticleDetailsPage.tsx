@@ -73,32 +73,32 @@ const ArticleDetailsPage: React.FC<IArticleDetailsPageProps> = ({ className }) =
         return <></>;
     }
 
-    const rootClasses = clsx('sh-article-details-page', className);
+    const rootClasses = clsx('np-article-details-page', className);
 
     return (
         <BasePage className={rootClasses}>
-            <div className="sh-article-details-page__image">
+            <div className="np-article-details-page__image">
                 <img src={article?.image} alt={article?.title} />
             </div>
-            <h1 className="sh-article-details-page__title">{article?.title}</h1>
-            <h2 className="sh-article-details-page__category">
-                <span className="sh-article-details-page__highlight">Category: </span>
+            <h1 className="np-article-details-page__title">{article?.title}</h1>
+            <h2 className="np-article-details-page__category">
+                <span className="np-article-details-page__highlight">Category: </span>
                 {article?.category}
             </h2>
-            <h3 className="sh-article-details-page__author">
-                <span className="sh-article-details-page__highlight">Published by: </span>
+            <h3 className="np-article-details-page__author">
+                <span className="np-article-details-page__highlight">Published by: </span>
                 {article?.userEmail}
             </h3>
             <>
                 {isUserLoggedIn() && (
-                    <div className="sh-article-details-page__bookmark">
+                    <div className="np-article-details-page__bookmark">
                         {bookmark?.id ? (
-                            <button className="sh-button sh-button--primary" onClick={() => deleteBookmarkMutate({ id: bookmark.id! })}>
+                            <button className="np-button np-button--primary" onClick={() => deleteBookmarkMutate({ id: bookmark.id! })}>
                                 Remove from bookmarks
                             </button>
                         ) : (
                             <button
-                                className="sh-button sh-button--primary"
+                                className="np-button np-button--primary"
                                 onClick={() => {
                                     addBookmarkMutate({
                                         bookmark: {
@@ -116,7 +116,7 @@ const ArticleDetailsPage: React.FC<IArticleDetailsPageProps> = ({ className }) =
             </>
             {/* `dangerouslySetInnerHTML` below set only for demonstration purposes. */}
             {/* Injected content must be properly sanitized to protect against XSS or malicious code injection attacks. */}
-            <div className="sh-article-details-page__content" dangerouslySetInnerHTML={{ __html: article?.content ?? '' }}></div>
+            <div className="np-article-details-page__content" dangerouslySetInnerHTML={{ __html: article?.content ?? '' }}></div>
         </BasePage>
     );
 };

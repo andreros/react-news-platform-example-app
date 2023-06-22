@@ -15,7 +15,7 @@ export const LogoutButton: React.FC<ILogoutButtonProps> = ({ className, ...other
         otherProps.onClick && otherProps.onClick(e);
     };
 
-    const rootClasses = clsx('sh-logout-button', className);
+    const rootClasses = clsx('np-logout-button', className);
 
     return (
         <button {...otherProps} className={rootClasses} type="button" onClick={handleLogoutButtonClick}>

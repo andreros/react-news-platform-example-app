@@ -17,55 +17,55 @@ const UserProfilePage: React.FC<IUserProfilePageProps> = ({ className }) => {
 
     const user = JSON.parse(localStorage.getItem('user') ?? '') as User;
 
-    const rootClasses = clsx('sh-user-profile-page', className);
+    const rootClasses = clsx('np-user-profile-page', className);
 
     return (
         <BasePage className={rootClasses}>
-            <div className="sh-user-profile-page__content">
-                {user.picture && <img className="sh-user-profile-page__avatar" src={user.picture} alt="User avatar" />}
+            <div className="np-user-profile-page__content">
+                {user.picture && <img className="np-user-profile-page__avatar" src={user.picture} alt="User avatar" />}
                 {user.nickname && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Nickname: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Nickname: </span>
                         {user.nickname}
                     </div>
                 )}
                 {user.name && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Name: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Name: </span>
                         {user.name}
                     </div>
                 )}
                 {user.email && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Email: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Email: </span>
                         {user.email}
                     </div>
                 )}
                 {user.birthdate && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Birthdate: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Birthdate: </span>
                         {user.birthdate}
                     </div>
                 )}
                 {user.address && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Address: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Address: </span>
                         {user.address}
                     </div>
                 )}
                 {user.phone_number && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Phone: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Phone: </span>
                         {user.phone_number}
                     </div>
                 )}
                 {user.website && (
-                    <div className="sh-user-profile-page__field">
-                        <span className="sh-user-profile-page__label">Website: </span>
+                    <div className="np-user-profile-page__field">
+                        <span className="np-user-profile-page__label">Website: </span>
                         {user.website}
                     </div>
                 )}
-                <LogoutButton className="sh-button sh-button--primary" />
+                <LogoutButton className="np-button np-button--primary" />
             </div>
         </BasePage>
     );

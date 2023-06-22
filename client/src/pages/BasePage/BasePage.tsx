@@ -10,14 +10,14 @@ export interface IBasePageProps extends React.HTMLProps<HTMLDivElement> {
 }
 
 export const BasePage: React.FC<IBasePageProps> = ({ className, children, ...otherProps }) => {
-    const rootClasses = clsx('sh-base-page', className);
+    const rootClasses = clsx('np-base-page', className);
     return (
         <div className={rootClasses} {...otherProps}>
-            <header className="sh-base-page__header">
+            <header className="np-base-page__header">
                 <Header />
             </header>
-            <main className="sh-base-page__main">{children}</main>
-            <footer className="sh-base-page__footer">
+            <main className="np-base-page__main">{children}</main>
+            <footer className="np-base-page__footer">
                 <Footer />
             </footer>
         </div>

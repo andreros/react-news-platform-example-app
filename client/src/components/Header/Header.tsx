@@ -15,29 +15,29 @@ export interface IHeaderProps {
 export const Header: React.FC<IHeaderProps> = ({ className }) => {
     const { isAuthenticated, isLoading } = useAuth0();
 
-    const rootClasses = clsx('sh-header', className);
+    const rootClasses = clsx('np-header', className);
 
     return (
         <div className={rootClasses}>
             <Link to="/">
-                <img className="sh-header__logo" src={logo} alt="News platform logo" />
+                <img className="np-header__logo" src={logo} alt="News platform logo" />
             </Link>
 
-            <div className="sh-header__navigation">
+            <div className="np-header__navigation">
                 {(isAuthenticated || localStorage.getItem('user')) && !isLoading && (
                     <>
-                        <Link className="sh-header__link" to="/bookmarks">
+                        <Link className="np-header__link" to="/bookmarks">
                             My Bookmarks
                         </Link>
-                        <Link className="sh-header__link" to="/articles/new">
+                        <Link className="np-header__link" to="/articles/new">
                             New article
                         </Link>
                     </>
                 )}
             </div>
 
-            <div className="sh-header__authentication">
-                {isAuthenticated || (localStorage.getItem('user') && !isLoading) ? <ProfileAvatar /> : <LoginButton className="sh-button sh-button--primary" />}
+            <div className="np-header__authentication">
+                {isAuthenticated || (localStorage.getItem('user') && !isLoading) ? <ProfileAvatar /> : <LoginButton className="np-button np-button--primary" />}
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ export interface ILoadingPageProps {
 }
 
 const LoadingPage: React.FC<ILoadingPageProps> = ({ className }) => {
-    const rootClasses = clsx('sh-loading-page', className);
+    const rootClasses = clsx('np-loading-page', className);
     return (
         <div className={rootClasses}>
             <h1>Loading...</h1>

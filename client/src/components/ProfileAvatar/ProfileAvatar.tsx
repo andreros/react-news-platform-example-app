@@ -16,11 +16,11 @@ export const ProfileAvatar: React.FC<IProfileAvatarProps> = ({ className }) => {
 
     const loggedInUser = JSON.parse(localStorage.getItem('user') ?? '');
 
-    const rootClasses = clsx('sh-profile-avatar', className);
+    const rootClasses = clsx('np-profile-avatar', className);
 
     return (
         <Link className={rootClasses} to="/user">
-            <img className="sh-profile-avatar__avatar" src={user?.picture || loggedInUser.picture} alt={user?.name || loggedInUser.name} />
+            <img className="np-profile-avatar__avatar" src={user?.picture || loggedInUser.picture} alt={user?.name || loggedInUser.name} />
         </Link>
     );
 };

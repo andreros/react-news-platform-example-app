@@ -68,23 +68,23 @@ const ArticleListPage: React.FC<IArticleListPageProps> = ({ className }) => {
         return <></>;
     }
 
-    const rootClasses = clsx('sh-article-list-page', className);
+    const rootClasses = clsx('np-article-list-page', className);
 
     return (
         <BasePage className={rootClasses}>
-            <div className="sh-article-list-page__filters">
-                <span className="sh-article-list-page__filters-label">Categories</span>
-                <Link className="sh-button sh-button--pill" to="/articles?category=Marketing">
+            <div className="np-article-list-page__filters">
+                <span className="np-article-list-page__filters-label">Categories</span>
+                <Link className="np-button np-button--pill" to="/articles?category=Marketing">
                     Marketing
                 </Link>
-                <Link className="sh-button sh-button--pill" to="/articles?category=Design">
+                <Link className="np-button np-button--pill" to="/articles?category=Design">
                     Design
                 </Link>
-                <Link className="sh-button sh-button--pill" to="/articles?category=Engineering">
+                <Link className="np-button np-button--pill" to="/articles?category=Engineering">
                     Engineering
                 </Link>
             </div>
-            <div className="sh-article-list-page__list">
+            <div className="np-article-list-page__list">
                 {articlesPages?.pages.map((articlePage, articlePageIndex) => (
                     <React.Fragment key={`article-page-${articlePageIndex}`}>
                         {articlePage.data.map((article) => (
@@ -101,8 +101,8 @@ const ArticleListPage: React.FC<IArticleListPageProps> = ({ className }) => {
             </div>
             <>
                 {showLoadMoreButton && (
-                    <div className="sh-article-list-page__load-more">
-                        <button className="sh-button sh-button--primary sh-button--large" onClick={() => fetchNextPage()}>
+                    <div className="np-article-list-page__load-more">
+                        <button className="np-button np-button--primary np-button--large" onClick={() => fetchNextPage()}>
                             Load more
                         </button>
                     </div>

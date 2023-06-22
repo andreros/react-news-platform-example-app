@@ -10,7 +10,7 @@ export interface IBookmarkListItemProps {
 }
 
 export const BookmarkListItem: React.FC<IBookmarkListItemProps> = ({ className, bookmark, onClick }) => {
-    const rootClasses = clsx('sh-bookmark-list-item', className);
+    const rootClasses = clsx('np-bookmark-list-item', className);
 
     const handleDeleteButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -20,10 +20,10 @@ export const BookmarkListItem: React.FC<IBookmarkListItemProps> = ({ className, 
 
     return (
         <div className={rootClasses}>
-            <div className="sh-bookmark-list-item__title sh-truncate">
-                Read "<span className="sh-bookmark-list-item__highlight">{bookmark.title}</span>"
+            <div className="np-bookmark-list-item__title np-truncate">
+                Read "<span className="np-bookmark-list-item__highlight">{bookmark.title}</span>"
             </div>
-            <button className="sh-button sh-button--primary" onClick={handleDeleteButtonClick}>
+            <button className="np-button np-button--primary" onClick={handleDeleteButtonClick}>
                 Delete
             </button>
         </div>

@@ -48,12 +48,12 @@ const BookmarkListPage: React.FC<IBookmarkListPageProps> = ({ className }) => {
         return <></>;
     }
 
-    const rootClasses = clsx('sh-bookmark-list-page', className);
+    const rootClasses = clsx('np-bookmark-list-page', className);
 
     return (
         <BasePage className={rootClasses}>
             {bookmarks?.data?.length ? (
-                <div className="sh-bookmark-list-page__list">
+                <div className="np-bookmark-list-page__list">
                     {bookmarks?.data.map((bookmark) => {
                         return (
                             <Link key={`bookmark-${bookmark.id}`} to={bookmark.url ?? '/'}>
@@ -63,11 +63,11 @@ const BookmarkListPage: React.FC<IBookmarkListPageProps> = ({ className }) => {
                     })}
                 </div>
             ) : (
-                <div className="sh-bookmark-list-page__empty-view">
+                <div className="np-bookmark-list-page__empty-view">
                     <p>You haven't saved any bookmarks yet.</p>
                     <p>
                         Go read some{' '}
-                        <Link className="sh-bookmark-list-page__link" to="/">
+                        <Link className="np-bookmark-list-page__link" to="/">
                             articles
                         </Link>{' '}
                         and click on the "Add to bookmarks" button.

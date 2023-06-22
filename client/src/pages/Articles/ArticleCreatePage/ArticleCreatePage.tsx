@@ -52,12 +52,12 @@ const ArticleCreatePage: React.FC<IArticleCreatePageProps> = ({ className }) => 
         onSubmit: (values) => addArticleMutate({ article: values })
     });
 
-    const rootClasses = clsx('sh-article-create-page', className);
+    const rootClasses = clsx('np-article-create-page', className);
 
     return (
         <BasePage className={rootClasses}>
-            <h1 className="sh-article-create-page__title">Create new article</h1>
-            <form className="sh-article-create-page__form">
+            <h1 className="np-article-create-page__title">Create new article</h1>
+            <form className="np-article-create-page__form">
                 <div className="flex flex-column gap-2 mb-6">
                     <div className="p-float-label">
                         <InputText id="title" className={clsx({ 'p-invalid': !!formik.errors.title })} onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.title} />
@@ -134,7 +134,7 @@ const ArticleCreatePage: React.FC<IArticleCreatePageProps> = ({ className }) => 
                     </div>
                 </div>
 
-                <button className="sh-button sh-button--primary sh-button--large" type="button" onClick={() => formik.handleSubmit()}>
+                <button className="np-button np-button--primary np-button--large" type="button" onClick={() => formik.handleSubmit()}>
                     Submit
                 </button>
             </form>

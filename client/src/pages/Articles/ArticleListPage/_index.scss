@@ -1,4 +1,4 @@
-.sh-article-list-page {
+.np-article-list-page {
   &__filters {
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     gap: 50px;
 
-    .sh-article-list-item {
+    .np-article-list-item {
       width: calc(50% - 25px);
     }
   }

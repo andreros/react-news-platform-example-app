@@ -14,7 +14,7 @@ export const LoginButton: React.FC<ILoginButtonProps> = ({ className, ...otherPr
         otherProps.onClick && otherProps.onClick(e);
     };
 
-    const rootClasses = clsx('sh-login-button', className);
+    const rootClasses = clsx('np-login-button', className);
 
     return (
         <button {...otherProps} className={rootClasses} type="button" onClick={handleLoginButtonClick}>
