@@ -56,12 +56,6 @@ npm i & npm run dev
 
 and then open the [http://localhost:3000/](http://localhost:3000/) url on your browser.
 
-## Known Issues
-
-- The client application does not respond correctly to full page refreshes when it is outside the main `/` route. Outside 
-this route a `Cannot GET ...` error is prompted to the user.
-  - `Workaround:` Get back to the main `/` route and refresh the browser window.
-
 ## Where to go from here (read it "further improvements")
 
 - Implement proper `bearer token` header submission on every authenticated API request and validation on the API side.

@@ -9,7 +9,7 @@ import { articlesKeys, getArticlesQuery } from '@/react-query/articles';
 import { ArticleListItem } from '@/components/ArticleListItem/ArticleListItem';
 import { toast } from 'react-toastify';
 
-import appConfig from '../../../../app.configs.json';
+import { getEnvironmentVariables } from '@/tools/tools';
 
 export interface IArticleListPageProps {
     className?: string;
@@ -57,7 +57,7 @@ const ArticleListPage: React.FC<IArticleListPageProps> = ({ className }) => {
      */
     if (articlesPages?.pages?.length) {
         const totalArticles = articlesPages?.pages[0].totalCount;
-        const loadedArticles = articlesPages?.pages.length * appConfig.api.recordsPerPage;
+        const loadedArticles = articlesPages?.pages.length * Number.parseInt(getEnvironmentVariables('recordsPerPage') || '0');
         showLoadMoreButton = loadedArticles < totalArticles;
     }
 
