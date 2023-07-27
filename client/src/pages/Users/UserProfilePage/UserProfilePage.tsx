@@ -1,10 +1,10 @@
 import { User } from '@auth0/auth0-react';
 import clsx from 'clsx';
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-import { BasePage } from '@/pages/BasePage/BasePage';
 import { LogoutButton } from '@/components/LogoutButton/LogoutButton';
+import { BasePage } from '@/pages/BasePage/BasePage';
 
 export interface IUserProfilePageProps {
     className?: string;

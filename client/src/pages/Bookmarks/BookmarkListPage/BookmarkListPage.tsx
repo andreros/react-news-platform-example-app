@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { BookmarkListItem } from '@/components/BookmarkListItem/BookmarkListItem';
 import { BasePage } from '@/pages/BasePage/BasePage';
 import LoadingPage from '@/pages/LoadingPage/LoadingPage';
-import { bookmarksKeys, getBookmarksQuery, deleteBookmarkMutation } from '@/react-query/bookmarks';
+import { bookmarksKeys, deleteBookmarkMutation, getBookmarksQuery } from '@/react-query/bookmarks';
 import { isUserLoggedIn } from '@/tools/tools';
 
 export interface IBookmarkListPageProps {

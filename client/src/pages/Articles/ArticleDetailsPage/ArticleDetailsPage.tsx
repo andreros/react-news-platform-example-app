@@ -2,8 +2,8 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import clsx from 'clsx';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
 import { toast } from 'react-toastify';
+
 import { BasePage } from '@/pages/BasePage/BasePage';
 import LoadingPage from '@/pages/LoadingPage/LoadingPage';
 import { articlesKeys, getArticleQuery } from '@/react-query/articles';
