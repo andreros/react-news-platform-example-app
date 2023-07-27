@@ -8,6 +8,7 @@
     "build": "webpack --mode production"
   },
   "author": "André Rosa (andreros@gmail.com)",
+  "license": "The Unlicensed",
   "devDependencies": {
     "@tanstack/react-query-devtools": "^4.29.7",
     "@types/react": "^18.2.6",

@@ -9,6 +9,7 @@
     "start:with:params": "npx cross-env PORT=9001 node server.js"
   },
   "author": "André Rosa (andreros@gmail.com)",
+  "license": "The Unlicensed",
   "dependencies": {
     "better-sqlite3": "^8.4.0",
     "cors": "^2.8.5",
