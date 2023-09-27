@@ -26,6 +26,7 @@ this project.
 - `Formik` to validate form data on the client side before submitting to the backend;
 - `React-Toastify` to show pop-up notifications throughout the application everytime the user needs feedback about a 
 performed operation;
+- `Statoscope` to generate reports about the application;
 
 ## Server Application Tech Stack
 

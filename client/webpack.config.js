@@ -67,7 +67,15 @@ module.exports = () => {
             publicPath: '/'
         },
 
-        plugins: [htmlPlugin, new DefinePlugin({ 'process.env': JSON.stringify(environmentVariables) })],
+        plugins: [
+            htmlPlugin,
+            new DefinePlugin({ 'process.env': JSON.stringify(environmentVariables) }),
+            new StatoscopeWebpackPlugin({
+                saveReportTo: 'reports/report-[hash].html',
+                saveStatsTo: 'reports/stats-[hash].json',
+                watchMode: false
+            })
+        ],
 
         // Set up the directory
         // from which webpack will take the static content.
