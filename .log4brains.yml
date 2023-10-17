@@ -1,0 +1,5 @@
+project:
+  name: react-news-platform-example-app
+  tz: Europe/Lisbon
+  adrFolder: /docs/adr
+  packages: []
