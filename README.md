@@ -35,6 +35,11 @@ this project.
 - `Webpack` to bundle the application and serve it in development mode;
 - `Statoscope` to generate reports about the application;
 
+## Client Testing tools
+
+- `Jest` javascript testing framework;
+- `React Testing Library` testing framework for working with React components;
+
 ## Server Application Tech Stack
 
 - `Express` framework to implement the RESTful API;
