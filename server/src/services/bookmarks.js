@@ -19,7 +19,7 @@ function getMultiple(queryParams = {}) {
     return {
         data,
         meta
-    }
+    };
 }
 
 function getByEmail(userEmail = '', url = '') {
@@ -27,7 +27,7 @@ function getByEmail(userEmail = '', url = '') {
 
     return {
         ...data[0]
-    }
+    };
 }
 
 function validateCreate(bookmarkObj) {
@@ -53,7 +53,7 @@ function create(bookmarkObj) {
     let message = 'Error creating bookmark.';
     if (result.changes) message = 'Bookmark created successfully.';
 
-    return {message};
+    return { message };
 }
 
 function remove(bookmarkObj) {
@@ -71,4 +71,4 @@ module.exports = {
     getByEmail,
     create,
     remove
-}
+};

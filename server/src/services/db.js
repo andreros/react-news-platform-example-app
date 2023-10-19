@@ -14,4 +14,4 @@ function run(sql, params) {
 module.exports = {
     query,
     run
-}
+};

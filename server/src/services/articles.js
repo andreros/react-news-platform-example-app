@@ -20,7 +20,7 @@ function getMultiple(queryParams = {}) {
     return {
         data,
         meta
-    }
+    };
 }
 
 function getOne(id = 0) {
@@ -28,7 +28,7 @@ function getOne(id = 0) {
 
     return {
         ...data[0]
-    }
+    };
 }
 
 function validateCreate(articleObj) {
@@ -48,18 +48,20 @@ function validateCreate(articleObj) {
 function create(articleObj) {
     validateCreate(articleObj);
     const { userEmail, category, title, description, image, content, published = 0 } = articleObj;
-    const result = db.run(`INSERT INTO articles (userEmail, category, title, description, image, content, published)
+    const result = db.run(
+        `INSERT INTO articles (userEmail, category, title, description, image, content, published)
         VALUES (@userEmail, @category, @title, @description, @image, @content, @published)`,
-        { userEmail, category, title, description, image, content, published });
+        { userEmail, category, title, description, image, content, published }
+    );
 
     let message = 'Error creating article.';
     if (result.changes) message = 'Article created successfully.';
 
-    return {message};
+    return { message };
 }
 
 module.exports = {
     getMultiple,
     getOne,
     create
-}
+};
