@@ -2,10 +2,17 @@
 
 React News Platform - Example Application
 
-## Proposed Solution
+This application was made available to showcase some of my technical skills, knowledge gathered as a front-end developer along the way and as a reference for wanted technologies, code examples and problem solutions.
 
-In order to achieve a fully functional News Platform, two different application architecture
-layers were implemented:
+Primarily implemented as a response to a code challenge, this small platform serves a different purpose now: being an evolving project where I experiment with different technologies, implement and learn them as they arise in React ecosystem or front-end realm.
+
+All the current implementations are functional although some may be incomplete. Why? Sometimes, implementing one case of a given technology in this project is enough as a proof of concept, sometimes implementing another standalone project makes more sense, for the sake of the learning experience.
+
+Please, feel free to take a look at my [GitHub repositories](https://github.com/andreros?tab=repositories) to see what's been cooking over the years ;)
+
+## Platform description
+
+In order to achieve a fully functional News Platform, two different application architecture layers were implemented:
 
 - A browser based client application;
 - A RESTful API for the backend;
@@ -16,7 +23,9 @@ over a relational database is a more fulfilling and rewarding coding experience.
 engine was used. Despite not being the perfect solution for a large scale distributed application, it fits the needs of
 this project.
 
-## Client Application Tech Stack
+## Client application
+
+### Tech Stack
 
 - `React` framework (with Typescript) for the overall application development;
 - `SASS` to build the needed application styles;
@@ -29,24 +38,31 @@ this project.
 - `React-Toastify` to show pop-up notifications throughout the application everytime the user needs feedback about a
   performed operation;
 
-## Client Application Support tools
+### Support tools
 
-- `Prettier` for code formatting;
 - `Webpack` to bundle the application and serve it in development mode;
 - `Statoscope` to generate reports about the application;
 
-## Client Testing tools
+### Testing tools
 
 - `Jest` javascript testing framework;
 - `React Testing Library` testing framework for working with React components;
 
-## Server Application Tech Stack
+## Server application
+
+### Tech Stack
 
 - `Express` framework to implement the RESTful API;
 - `Better-SQLite3` to interact with a relational `SQLite` database;
 
+### Testing tools
+
+- `Jest` javascript testing framework;
+- `supertest` testing framework for working with Express.JS implemented APIs;
+
 ## Platform Support tools
 
+- `Prettier` for code formatting;
 - `Log4Brains` to manage Architectural Decision Record (ADR) and generate static HTML knowledge base;
 
 ## Installation and platform bootstrap
@@ -55,14 +71,14 @@ From the project root folder, please execute the following commands in a termina
 
 ### Server application
 
-```
+```bash
 cd server
 npm i & npm run dev
 ```
 
 or
 
-```
+```bash
 cd server
 npm i & npm start
 ```
@@ -71,7 +87,7 @@ The API will be accepting requests in the [http://localhost:3001/api/v1/](http:/
 
 ### Client application
 
-```
+```bash
 cd client
 npm i & npm run dev
 ```
