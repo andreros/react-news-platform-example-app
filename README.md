@@ -10,6 +10,16 @@ All the current implementations are functional although some may be incomplete. 
 
 Please, feel free to take a look at my [GitHub repositories](https://github.com/andreros?tab=repositories) to see what's been cooking over the years ;)
 
+## Screenshots
+
+<img src="docs/screenshots/client01.jpg" width="300" alt="Homepage"><br/>
+<img src="docs/screenshots/client02.jpg" width="300" alt="Homepage"><br/>
+<img src="docs/screenshots/client03.jpg" width="300" alt="Article"><br/>
+<img src="docs/screenshots/client04.jpg" width="300" alt="Bookmarks"><br/>
+<img src="docs/screenshots/client05.jpg" width="300" alt="New article"><br/>
+<img src="docs/screenshots/client06.jpg" width="300" alt="User profile"><br/>
+<img src="docs/screenshots/server01.jpg" width="300" alt="Server"><br/>
+
 ## Platform description
 
 In order to achieve a fully functional News Platform, two different application architecture layers were implemented:

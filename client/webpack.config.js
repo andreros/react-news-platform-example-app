@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 const { DefinePlugin } = require('webpack');
 const sourceFolder = './src/';
 const defaultPort = 3000;
